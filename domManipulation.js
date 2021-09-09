@@ -19,8 +19,32 @@
 // const p2 = document.querySelector('.p2');
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //MANIPULASI NODE
+//document.createElement()
+// document.createTextNode()
+// Node.appendChild()
+// Node.insertBefore()
+// parentNode.removeChild()
+// parentNode.replaceChild()
+
 //buat elemen baru
+//buat p
 const buatP = document.createElement('p');
 const isiP = document.createTextNode('Ini dari manipulasi node');
 
@@ -32,13 +56,42 @@ const sectionA = document.getElementById('a');
 sectionA.appendChild(buatP);
 
 
-  
+//buat li baru
+const liBaru = document.createElement('li');
+const isiLi = document.createTextNode('ini dari manupulasi NODE');
+liBaru.appendChild(isiLi);
+
+const ul = document.querySelector('section#b ul');
+const li = ul.querySelector('li:nth-child(2)');
+
+ul.insertBefore(liBaru, li);
 
 
-//document.createElement()
-// document.createTextNode()
-// Node.appendChild()
-// Node.insertBefore()
-// parentNode.removeChild()
-// parentNode.replaceChild()
+
+//removeChild()
+const link = document.getElementsByTagName('a')[0];
+sectionA.removeChild(link);
+
+
+//replaceChild
+//tag yg nak diganti
+const sectionB = document.getElementById('b');
+//lokasi ny
+const p4 = sectionB.querySelector('p');
+//diganti dgn apo
+const ganti = document.createElement('h2');
+const textGanti = document.createTextNode('JUDUL BARU DARI MANIPULASI NODE');
+ganti.appendChild(textGanti);
+
+sectionB.replaceChild(ganti, p4);
+
+
+//menandai yg vary
+buatP.style.backgroundColor = 'lightblue';
+li.style.backgroundColor = 'lightblue';
+ganti.style.backgroundColor = 'lightblue'
+
+
+
+
 
