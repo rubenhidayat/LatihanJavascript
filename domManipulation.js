@@ -86,7 +86,7 @@ ganti.appendChild(textGanti);
 sectionB.replaceChild(ganti, p4);
 
 
-//menandai yg vary
+//menandai yg baru
 buatP.style.backgroundColor = 'lightblue';
 li.style.backgroundColor = 'lightblue';
 ganti.style.backgroundColor = 'lightblue'
