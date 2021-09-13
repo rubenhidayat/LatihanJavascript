@@ -2,7 +2,7 @@
 // const p2 = document.querySelector('.p2');
 // function ubahWarna(){
 //     p2.style.backgroundColor = 'lightblue';
-// }
+// }asdasd
 // p2.onclick = ubahWarna;
 
 // //add event listener
