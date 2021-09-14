@@ -1,0 +1,1 @@
+const tombol = document.getElementById('ganti');
