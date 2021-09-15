@@ -4,6 +4,7 @@ const warna = document.createTextNode('Light Mode');
 tombol.addEventListener('click', function(){
     // document.body.style.backgroundColor = 'lightblue';
     document.body.classList.toggle('dark-mode');
+    
 });
 
 
@@ -48,3 +49,14 @@ sBiru.addEventListener('input', function(){
     const b = sBiru.value;
     document.body.style.backgroundColor = 'rgb('+ r +', '+ g +', '+ b +')';
 });
+
+
+
+
+//MENGUBAH WARNA BACKGROUND MENGGUNAKAN MOUSEMOVE
+document.body.addEventListener('mousemove', function(event){
+    //posisi mouse clientX untuk mengetahui jumlah sumbu x
+   const xPos = Math.round((event.clientX / window.innerWidth) * 255);
+   const yPos = Math.round((event.clientY / window.innerHeight) * 255);
+   document.body.style.backgroundColor = 'rgb( '+ xPos +' , ' + yPos + ', 100 )'
+})
