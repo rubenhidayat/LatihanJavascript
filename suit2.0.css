@@ -131,17 +131,17 @@ img {
     border-radius: 50%;
 }
 
-.gajah, .orang, .semut {
+.batu, .gunting, .kertas {
     transition: .3s;
     position: relative;
     top:0;
     cursor: pointer;
 }
 
-.gajah:hover, .semut:hover, .orang:hover, .active {
+.batu:hover, .kertas:hover, .gunting:hover, .active {
     box-shadow: 0 0 10px 5px limegreen;
 }
 
-.gajah:active, .semut:active, .orang:active {
+.batu:active, .kertas:active, .gunting:active {
     top: 2px;
 }

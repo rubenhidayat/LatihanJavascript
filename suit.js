@@ -3,6 +3,7 @@ let ulang = true;
 while(ulang == true){
     let player = prompt('masukkan batu/gunting/kertas');
 
+//rule 1
     let comp = Math.random();
     if(comp < 0.34){
         comp = 'batu';
@@ -13,7 +14,7 @@ while(ulang == true){
     }
 
     let hasil = '';
-
+//rule 2
     if(player == comp){
         hasil = 'seri';
     }else if(player == 'batu'){
