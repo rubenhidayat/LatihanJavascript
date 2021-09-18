@@ -1,5 +1,44 @@
-const card = document.querySelector('.card');
-const x = document.querySelector('.close');
-x.addEventListener('click', function(){
-    card.style.display = 'none';
-})
+// const card = document.querySelector('.card');
+// const x = document.querySelector('.close');
+// x.addEventListener('click', function(){
+//     card.style.display = 'none';
+// })
+
+//DOM TRAVERSAL METHOD
+// METHOD                         HASIL             
+// -parentNode                 ->  node
+// -parentElement              ->  element
+// -nextSibling                ->  node
+// -nextElementSibling         ->  element
+// -previousSibling            ->  node
+// -previousElementSibling     ->  element
+
+
+//dom Traversal
+
+const close = document.querySelectorAll('.close');
+// for(let i = 0; i<close.length;i++){
+//     close[i].addEventListener('click', function(e){
+//         // close[i].parentElement.style.display = 'none';
+//         e.target.parentElement.style.display = 'none';
+//     });
+// }
+
+close.forEach(function(el){
+    el.addEventListener('click', function(e){
+        e.target.parentElement.style.display = 'none';
+    });
+});
+
+
+const nama = document.querySelector('.nama');
+console.log(nama.parentElement);
+console.log(nama.parentNode);
+console.log(nama.parentElement.parentElement);
+console.log(nama.nextSibling);
+console.log(nama.nextElementSibling);
+console.log(nama.previousElementSibling);
+
+
+
+
