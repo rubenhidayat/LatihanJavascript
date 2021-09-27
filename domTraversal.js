@@ -27,17 +27,28 @@ const close = document.querySelectorAll('.close');
 close.forEach(function(el){
     el.addEventListener('click', function(e){
         e.target.parentElement.style.display = 'none';
+        e.preventDefault();//menghentikan aktifitas default html
+        e.stopPropagation();//menghentikan aktifitas fungsi lain pada parent yg sama
     });
 });
 
 
-const nama = document.querySelector('.nama');
-console.log(nama.parentElement);
-console.log(nama.parentNode);
-console.log(nama.parentElement.parentElement);
-console.log(nama.nextSibling);
-console.log(nama.nextElementSibling);
-console.log(nama.previousElementSibling);
+const cards = document.querySelectorAll('.card');
+cards.forEach(function(card){
+    card.addEventListener('click', function(x){
+        alert('okat');
+    });
+});
+
+
+
+// const nama = document.querySelector('.nama');
+// console.log(nama.parentElement);
+// console.log(nama.parentNode);
+// console.log(nama.parentElement.parentElement);
+// console.log(nama.nextSibling);
+// console.log(nama.nextElementSibling);
+// console.log(nama.previousElementSibling);
 
 
 
