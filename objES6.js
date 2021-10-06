@@ -33,3 +33,14 @@
 //   };
 //   const obj2 = Object.assign({c: 5, d: 6}, obj1);
 //   console.log(obj2.c, obj2.d);
+
+
+let a = [1,1,2,3,4,4,5,5];
+
+var removeDuplicate = function(nums){
+    const unique = new Set(nums);
+    console.log(nums.length, unique);
+    a.push(unique);
+}
+
+removeDuplicate(a);
