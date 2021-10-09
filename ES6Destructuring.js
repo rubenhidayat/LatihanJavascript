@@ -17,11 +17,11 @@ const {start: {x:startX, y:startY}} = nest;
 console.log(startX);
 
 //assign variables from arrays
-const {q,,,r} = [1,2,3,4,5];
+const [q,,,r] = [1,2,3,4,5];
 console.log(q,r);
 
 //assign operator to reassign array elements
-const {e,t, ...rest} = [1,2,3,4,5];
+const [e,t, ...rest] = [1,2,3,4,5];
 console.log(e,t);
 console.log(rest);
 
