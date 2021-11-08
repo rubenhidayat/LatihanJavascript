@@ -35,12 +35,30 @@
 //   console.log(obj2.c, obj2.d);
 
 
-let a = [1,1,2,3,4,4,5,5];
+// let a = [1,1,2,3,4,4,5,5];
 
-var removeDuplicate = function(nums){
-    const unique = new Set(nums);
-    console.log(nums.length, unique);
-    a.push(unique);
+// var removeDuplicate = function(nums){
+//     const unique = new Set(nums);
+//     console.log(nums.length, unique);
+//     a.push(unique);
+// }
+
+// removeDuplicate(a);
+
+//rest and spread
+
+// signIn = (username, password, umur)=>{
+//     console.log(username+' punya password '+ password +' dan umurnya '+ umur);
+// }
+
+// let data = ['ruben hidayat', '123', '23'];
+// signIn(...data);
+
+signIn = (...member)=>{
+    console.log(member);
 }
 
-removeDuplicate(a);
+username = 'ruben hidayat'
+password = '123'
+umur = '23'
+signIn(username, password, umur);
